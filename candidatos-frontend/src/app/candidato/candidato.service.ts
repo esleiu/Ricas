@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class CandidatoService {
-  private apiUrl = 'https://curly-enigma-694v99j7qvxv355vw-8000.app.github.dev/api/candidatos/';
+  private apiUrl = 'http://localhost:8000/api/candidatos/';
 
 
   constructor(private http: HttpClient) {}
