@@ -1,0 +1,54 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 16px;
+  background-color: #fafafa;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-bottom: 16px;
+  color: #1890ff;
+}
+
+button[nz-button] {
+  margin-bottom: 16px;
+}
+
+nz-table {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* 🎨 Linhas com cores suaves */
+tr:nth-child(6n + 1) { background-color: rgba(255, 99, 132, 0.08); }
+tr:nth-child(6n + 2) { background-color: rgba(54, 162, 235, 0.08); }
+tr:nth-child(6n + 3) { background-color: rgba(255, 206, 86, 0.08); }
+tr:nth-child(6n + 4) { background-color: rgba(75, 192, 192, 0.08); }
+tr:nth-child(6n + 5) { background-color: rgba(153, 102, 255, 0.08); }
+tr:nth-child(6n + 6) { background-color: rgba(255, 159, 64, 0.08); }
+
+/* ✨ Hover com cores intensificadas */
+tr:nth-child(6n + 1):hover { background-color: rgba(255, 99, 132, 0.2); }
+tr:nth-child(6n + 2):hover { background-color: rgba(54, 162, 235, 0.2); }
+tr:nth-child(6n + 3):hover { background-color: rgba(255, 206, 86, 0.2); }
+tr:nth-child(6n + 4):hover { background-color: rgba(75, 192, 192, 0.2); }
+tr:nth-child(6n + 5):hover { background-color: rgba(153, 102, 255, 0.2); }
+tr:nth-child(6n + 6):hover { background-color: rgba(255, 159, 64, 0.2); }
+
+td, th {
+  text-align: center;
+  vertical-align: middle !important;
+  padding: 12px;
+  transition: background-color 0.2s ease;
+}
+
+nz-table .ant-table-tbody > tr:hover > td {
+  background: unset !important;
+}
