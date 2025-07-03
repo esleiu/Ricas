@@ -131,9 +131,5 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:4200",
-    "https://curly-enigma-694v99j7qvxv355vw-4200.app.github.dev",
-    "https://localhost:4200",
-]
+CORS_ALLOW_ALL_ORIGINS = True
 
