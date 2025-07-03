@@ -55,3 +55,39 @@ ng serve
 private apiUrl = 'http://localhost:8000/api/candidatos/';
 
 
+
+
+pip install django djangorestframework corsheaders
+Rode as migrações:
+
+
+
+cd backend
+python manage.py migrate
+Inicie o servidor:
+
+python manage.py runserver
+Frontend
+Instale as dependências:
+
+
+cd frontend
+npm install
+npm install -g @angular/cli
+ng add ng-zorro-antd
+
+Inicie o servidor:
+
+ng serve
+
+private apiUrl = 'http://localhost:8000/api/candidatos/';
+
+
+pip install django-cors-headers
+pip install djangorestframework
+
+npx ng serve
+npx ng add ng-zorro-antd
+
+
+
