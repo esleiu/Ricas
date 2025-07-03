@@ -33,6 +33,7 @@ pip install django djangorestframework corsheaders
 Rode as migrações:
 
 
+
 cd backend
 python manage.py migrate
 Inicie o servidor:
@@ -44,10 +45,13 @@ Instale as dependências:
 
 cd frontend
 npm install
+npm install -g @angular/cli
+ng add ng-zorro-antd
+
 Inicie o servidor:
 
 ng serve
 
- private apiUrl = 'http://localhost:8000/api/candidatos/';
+private apiUrl = 'http://localhost:8000/api/candidatos/';
 
 
