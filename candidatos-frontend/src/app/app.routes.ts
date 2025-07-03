@@ -1,8 +1,8 @@
 // src/app/app.routes.ts
 import { Routes } from '@angular/router';
-import { CandidatoListComponent } from './candidato/candidato-list.component';
-import { CandidatoFormComponent } from './candidato/candidato-form.component';
-import { CandidatoDetailComponent } from './candidato/candidato-detail.component';
+import { CandidatoListComponent } from './candidato/components/candidato-list/candidato-list.component';
+import { CandidatoFormComponent } from './candidato/components/candidato-form/candidato-form.component';
+import { CandidatoDetailComponent } from './candidato/components/candidato-detail/candidato-detail.component';
 
 export const routes: Routes = [
   { path: '', component: CandidatoListComponent },
