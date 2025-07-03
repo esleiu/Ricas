@@ -48,4 +48,6 @@ Inicie o servidor:
 
 ng serve
 
+ private apiUrl = 'http://localhost:8000/api/candidatos/';
+
 
