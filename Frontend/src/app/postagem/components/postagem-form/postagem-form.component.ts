@@ -11,7 +11,7 @@ import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzCardModule } from 'ng-zorro-antd/card';
 import { NzIconModule } from 'ng-zorro-antd/icon';
-
+/*so para poder dar pull request*/
 @Component({
   selector: 'app-postagem-form',
   standalone: true,
