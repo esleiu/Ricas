@@ -1,0 +1,13 @@
+<h2>Detalhes da Postagem</h2>
+
+<div *ngIf="postagem">
+  <p><strong>Autora:</strong> {{ postagem.autora }}</p>
+  <p><strong>Conteúdo:</strong> {{ postagem.conteudo }}</p>
+  <p><strong>Resumo:</strong> {{ postagem.resumo }}</p>
+  <p><strong>Categoria:</strong> {{ postagem.categoria }}</p>
+  <p><strong>Data:</strong> {{ postagem.dataPublicacao }}</p>
+  <p><strong>Curtidas:</strong> {{ postagem.curtidas }}</p>
+  <p><strong>Destaque:</strong> {{ postagem.emDestaque ? 'Sim' : 'Não' }}</p>
+
+  <button (click)="voltar()">Voltar</button>
+</div>

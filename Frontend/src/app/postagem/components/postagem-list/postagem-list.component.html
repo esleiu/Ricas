@@ -1,0 +1,28 @@
+<nz-table [nzData]="postagens" [nzBordered]="true" [nzSize]="'middle'" [nzScroll]="{ x: '1000px' }">
+  <thead>
+    <tr>
+      <th>Autora</th>
+      <th>Conteúdo</th>
+      <th>Categoria</th>
+      <th>Data</th>
+      <th>Destaque</th>
+      <th>Curtidas</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of postagens">
+      <td>{{ p.autora ?? '-' }}</td>
+      <td>{{ p.conteudo ?? '-' }}</td>
+      <td>{{ p.categoria ?? '-' }}</td>
+      <td>{{ p.dataPublicacao ?? '-' }}</td>
+      <td>{{ p.emDestaque ? '⭐' : '' }}</td>
+      <td>{{ p.curtidas ?? 0 }}</td>
+      <td>
+        <a [routerLink]="['/editar', p.id]"><button nz-button nzSize="small">Editar</button></a>
+        <a [routerLink]="['/detalhar', p.id]"><button nz-button nzSize="small">Ver</button></a>
+        <button nz-button nzSize="small" nzType="default" (click)="remover(p.id)">Excluir</button>
+      </td>
+    </tr>
+  </tbody>
+</nz-table>

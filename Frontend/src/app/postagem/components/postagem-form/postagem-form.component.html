@@ -1,0 +1,31 @@
+<nz-card nzTitle="Postar algo" class="form-container">
+  <form (ngSubmit)="salvar()" #f="ngForm">
+    <label>Autora</label>
+    <input nz-input [(ngModel)]="postagem.autora" name="autora" required />
+
+    <label>Conteúdo</label>
+    <textarea nz-input rows="3" [(ngModel)]="postagem.conteudo" name="conteudo" required></textarea>
+
+    <label>Resumo</label>
+    <input nz-input [(ngModel)]="postagem.resumo" name="resumo" />
+
+    <label>Categoria</label>
+    <input nz-input [(ngModel)]="postagem.categoria" name="categoria" />
+
+    <label>Data</label>
+    <input nz-input type="date" [(ngModel)]="postagem.dataPublicacao" name="dataPublicacao" />
+
+    <label>Curtidas</label>
+    <input nz-input type="number" [(ngModel)]="postagem.curtidas" name="curtidas" />
+
+    <label>
+      <input type="checkbox" [(ngModel)]="postagem.emDestaque" name="emDestaque" />
+      Em Destaque
+    </label>
+
+    <div class="actions">
+      <button nz-button nzType="primary" [disabled]="!f.valid" type="submit">Salvar</button>
+      <button nz-button (click)="voltar()" type="button">Cancelar</button>
+    </div>
+  </form>
+</nz-card>
